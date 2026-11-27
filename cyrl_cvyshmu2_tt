@@ -1,0 +1,71 @@
+// Tatar Cyrillic keyboard "cvyshmu2" (from Unexpected Keyboard: cyrl_cvyshmu2_tt)
+// converted to an XKB symbols file for GNU/Linux.
+//
+// Levels: 1 = base, 2 = Shift, 3 = AltGr, 4 = AltGr+Shift.
+// The original top-row swipes (digits and punctuation) live on the physical
+// number row; swipe letters (ж ю щ қ w ц ё ъ ґ) are on AltGr.
+
+default partial alphanumeric_keys
+xkb_symbols "basic" {
+    include "pc(pc105)"
+    include "level3(ralt_switch)"
+
+    name[Group1] = "Tatar (cvyshmu2)";
+
+    // Physical number row: digits and punctuation from the original top row
+    key <TLDE> { type[Group1] = "TWO_LEVEL", [ grave, asciitilde ] };
+    key <AE01> { type[Group1] = "TWO_LEVEL", [ 1, exclam ] };
+    key <AE02> { type[Group1] = "TWO_LEVEL", [ 2, at ] };
+    key <AE03> { type[Group1] = "TWO_LEVEL", [ 3, numbersign ] };
+    key <AE04> { type[Group1] = "TWO_LEVEL", [ 4, dollar ] };
+    key <AE05> { type[Group1] = "TWO_LEVEL", [ 5, percent ] };
+    key <AE06> { type[Group1] = "TWO_LEVEL", [ 6, asciicircum ] };
+    key <AE07> { type[Group1] = "TWO_LEVEL", [ 7, ampersand ] };
+    key <AE08> { type[Group1] = "TWO_LEVEL", [ 8, asterisk ] };
+    key <AE09> { type[Group1] = "TWO_LEVEL", [ 9, parenleft ] };
+    key <AE10> { type[Group1] = "TWO_LEVEL", [ 0, parenright ] };
+    key <AE11> { type[Group1] = "FOUR_LEVEL", [ minus, underscore, bracketleft, braceleft ] };
+    key <AE12> { type[Group1] = "FOUR_LEVEL", [ equal, plus, bracketright, braceright ] };
+    key <BKSL> { type[Group1] = "TWO_LEVEL", [ backslash, bar ] };
+
+    // Original row 1
+    key <AD01> { type[Group1] = "FOUR_LEVEL_ALPHABETIC", [ U04B7, U04B6, U0436, U0416 ] };
+    key <AD02> { type[Group1] = "FOUR_LEVEL_ALPHABETIC", [ U0432, U0412, U044E, U042E ] };
+    key <AD03> { type[Group1] = "FOUR_LEVEL_ALPHABETIC", [ U0439, U0419 ] };
+    key <AD04> { type[Group1] = "FOUR_LEVEL_ALPHABETIC", [ U0448, U0428, U0449, U0429 ] };
+    key <AD05> { type[Group1] = "FOUR_LEVEL_ALPHABETIC", [ U043C, U041C ] };
+    key <AD06> { type[Group1] = "FOUR_LEVEL_ALPHABETIC", [ U0443, U0423, w, W ] };
+    key <AD07> { type[Group1] = "FOUR_LEVEL_ALPHABETIC", [ U043A, U041A, U049B, U049A ] };
+    key <AD08> { type[Group1] = "FOUR_LEVEL_ALPHABETIC", [ U0434, U0414 ] };
+    key <AD09> { type[Group1] = "FOUR_LEVEL_ALPHABETIC", [ U04AF, U04AE ] };
+    key <AD10> { type[Group1] = "FOUR_LEVEL_ALPHABETIC", [ U043F, U041F ] };
+    key <AD11> { type[Group1] = "FOUR_LEVEL_ALPHABETIC", [ U0445, U0425 ] };
+    key <AD12> { type[Group1] = "FOUR_LEVEL_ALPHABETIC", [ U044C, U042C ] };
+
+    // Original row 2
+    key <AC01> { type[Group1] = "FOUR_LEVEL_ALPHABETIC", [ U0447, U0427, U0446, U0426 ] };
+    key <AC02> { type[Group1] = "FOUR_LEVEL_ALPHABETIC", [ U04D9, U04D8 ] };
+    key <AC03> { type[Group1] = "FOUR_LEVEL_ALPHABETIC", [ U0442, U0422 ] };
+    key <AC04> { type[Group1] = "FOUR_LEVEL_ALPHABETIC", [ U043B, U041B ] };
+    key <AC05> { type[Group1] = "FOUR_LEVEL_ALPHABETIC", [ U0440, U0420 ] };
+    key <AC06> { type[Group1] = "FOUR_LEVEL_ALPHABETIC", [ U0430, U0410 ] };
+    key <AC07> { type[Group1] = "FOUR_LEVEL_ALPHABETIC", [ U0435, U0415, U0451, U0401 ] };
+    key <AC08> { type[Group1] = "FOUR_LEVEL_ALPHABETIC", [ U043E, U041E, U20BD, U20BD ] };
+    key <AC09> { type[Group1] = "FOUR_LEVEL_ALPHABETIC", [ U044B, U042B ] };
+    key <AC10> { type[Group1] = "FOUR_LEVEL_ALPHABETIC", [ U043D, U041D, semicolon, colon ] };
+    key <AC11> { type[Group1] = "FOUR_LEVEL_ALPHABETIC", [ U0438, U0418, apostrophe, quotedbl ] };
+
+    // Original row 3
+    key <AB01> { type[Group1] = "FOUR_LEVEL_ALPHABETIC", [ U044F, U042F, U044A, U042A ] };
+    key <AB02> { type[Group1] = "FOUR_LEVEL_ALPHABETIC", [ U0437, U0417 ] };
+    key <AB03> { type[Group1] = "FOUR_LEVEL_ALPHABETIC", [ U0433, U0413, U0491, U0490 ] };
+    key <AB04> { type[Group1] = "FOUR_LEVEL_ALPHABETIC", [ U0431, U0411 ] };
+    key <AB05> { type[Group1] = "FOUR_LEVEL_ALPHABETIC", [ U04E9, U04E8 ] };
+    key <AB06> { type[Group1] = "FOUR_LEVEL_ALPHABETIC", [ U0444, U0424 ] };
+    key <AB07> { type[Group1] = "FOUR_LEVEL_ALPHABETIC", [ U04BB, U04BA ] };
+    key <AB08> { type[Group1] = "FOUR_LEVEL_ALPHABETIC", [ U0441, U0421, comma, less ] };
+    key <AB09> { type[Group1] = "FOUR_LEVEL_ALPHABETIC", [ U04A3, U04A2, period, greater ] };
+    key <AB10> { type[Group1] = "FOUR_LEVEL_ALPHABETIC", [ U044D, U042D, slash, question ] };
+
+    key <SPCE> { [ space ] };
+};
